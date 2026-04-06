@@ -5,22 +5,22 @@
 class WolfcastleAT0_5 < Formula
   desc "Wolfcastle takes complex work, breaks it into pieces, and sends AI models to destroy every one of them"
   homepage "https://github.com/dorkusprime/wolfcastle"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
   keg_only :versioned_formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.0/wolfcastle_0.5.0_darwin_amd64.tar.gz"
-      sha256 "539285bd034ac88d6cccdcc82c1ab75afe69dd15bfe20bba04b4052f40eab530"
+      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.1/wolfcastle_0.5.1_darwin_amd64.tar.gz"
+      sha256 "6dc6b7ddbafca50b875124836f809b1a4f8286c856a6c8984424ed8f9cfe87c7"
 
       define_method(:install) do
         bin.install "wolfcastle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.0/wolfcastle_0.5.0_darwin_arm64.tar.gz"
-      sha256 "5852d4b7241c64ce01d2900968424dc2e6f0ff5ce3a245c6e1f395faf54393f3"
+      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.1/wolfcastle_0.5.1_darwin_arm64.tar.gz"
+      sha256 "21123284ed0e7aea12aa571cf92a5730dbe4e495d1e13546e89ca99c0d8bb01d"
 
       define_method(:install) do
         bin.install "wolfcastle"
@@ -30,15 +30,15 @@ class WolfcastleAT0_5 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.0/wolfcastle_0.5.0_linux_amd64.tar.gz"
-      sha256 "73e1011ec32ea6d1cb415f8342b8fa7beb235afd54905dad380c0e7770b4bdf4"
+      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.1/wolfcastle_0.5.1_linux_amd64.tar.gz"
+      sha256 "49ae1dcfe4ab7f8609354cd07e36828cad1f2f7a062ec377ffc76d7222450f73"
       define_method(:install) do
         bin.install "wolfcastle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.0/wolfcastle_0.5.0_linux_arm64.tar.gz"
-      sha256 "be2d8ea059be9c788567129c254d7b770fa1424b8eeeed091798fe2974ed3e06"
+      url "https://github.com/dorkusprime/wolfcastle/releases/download/v0.5.1/wolfcastle_0.5.1_linux_arm64.tar.gz"
+      sha256 "6a333a13208f1964585480f65f118a784bcfae2c744df0ec0af775b8079ea97e"
       define_method(:install) do
         bin.install "wolfcastle"
       end
